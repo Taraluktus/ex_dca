@@ -2,12 +2,12 @@ defmodule UserMgmt.User do
   @moduledoc """
   Struct for a `User`.
   """
-  alias __MODULE__
 
   @enforce_keys :name
   defstruct [:name, :email]
 
+  @spec new(any(), any()) :: %__MODULE__{email: any(), name: any()}
   def new(name, email) do
-    %User{name: name, email: email}
+    %__MODULE__{name: name, email: email}
   end
 end
