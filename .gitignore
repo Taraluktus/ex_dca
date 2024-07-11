@@ -25,3 +25,6 @@ erl_crash.dump
 .DS_Store
 
 .elixir_ls/
+
+/config/prod.exs
+/config/dev.exs
