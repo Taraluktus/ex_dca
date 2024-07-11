@@ -9,6 +9,12 @@ defmodule ExDca.MixProject do
       dialyzer: [plt_add_deps: :app_tree],
       deps: deps(),
       aliases: aliases(),
+      releases: [
+        dca_complete: [
+          version: "0.0.1",
+          applications: [user_mgmt: :permanent]
+        ]
+      ],
 
       # Docs
       name: "ExDca",
